@@ -1,8 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import WebFontLoader from 'webfontloader'
+import dayjs from "dayjs";
 import App from './App';
+
+import './css/index.css'
+
+import 'dayjs/locale/ru'
+
 import reportWebVitals from './reportWebVitals';
+
+WebFontLoader.load({
+    google: {
+        families: ['Open Sans:300,400,700']
+    }
+})
+
+dayjs.locale('ru')
 
 ReactDOM.render(
   <React.StrictMode>
